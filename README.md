@@ -11,5 +11,6 @@ A Lab Activiy in 6AWEB subject
 - Bootstrap v5
 
 ```bash
-npm i bootstrap@latest```
+npm i bootstrap@latest
+```
 
