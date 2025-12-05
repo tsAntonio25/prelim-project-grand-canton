@@ -1,7 +1,4 @@
 import {
-  Title
-} from "./chunk-UVDNEZUX.js";
-import {
   HashLocationStrategy,
   LOCATION_INITIALIZED,
   Location,
@@ -9,8 +6,9 @@ import {
   NavigationAdapterForLocation,
   PathLocationStrategy,
   PlatformNavigation,
+  Title,
   ViewportScroller
-} from "./chunk-PTASYXIA.js";
+} from "./chunk-LHUMF5S6.js";
 import {
   APP_BOOTSTRAP_LISTENER,
   ApplicationRef,

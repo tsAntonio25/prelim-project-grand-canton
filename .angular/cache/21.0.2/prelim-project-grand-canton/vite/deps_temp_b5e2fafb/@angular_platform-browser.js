@@ -26,6 +26,7 @@ import {
   createApplication,
   disableDebugTools,
   enableDebugTools,
+  getDOM,
   platformBrowser,
   provideClientHydration,
   provideProtractorTestingSupport,
@@ -34,10 +35,7 @@ import {
   withI18nSupport,
   withIncrementalHydration,
   withNoHttpTransferCache
-} from "./chunk-UVDNEZUX.js";
-import {
-  getDOM
-} from "./chunk-PTASYXIA.js";
+} from "./chunk-LHUMF5S6.js";
 import "./chunk-XKWSCZ4C.js";
 export {
   BrowserModule,
@@ -77,3 +75,4 @@ export {
   SharedStylesHost as ɵSharedStylesHost,
   getDOM as ɵgetDOM
 };
+//# sourceMappingURL=@angular_platform-browser.js.map

@@ -1,0 +1,39 @@
+.error-container {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e8f5e9, #fffae9);
+  padding: 20px;
+}
+
+.error-title {
+  font-size: 120px;
+  font-weight: 900;
+  color: #839527;
+}
+
+.error-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #7c8d25;
+}
+
+.error-message {
+  font-size: 16px;
+  color: #3d4612;
+  max-width: 400px;
+}
+
+.error-image {
+  width: 280px;
+  margin-top: 20px;
+  opacity: 0.9;
+}
+
+.btn {
+  background-color: #839527;
+  border: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+}

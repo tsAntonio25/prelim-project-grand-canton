@@ -1,1 +1,108 @@
-<p>services works!</p>
+<div class="container py-5">
+
+  <!-- HEADER -->
+<div class="carousel-header">
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://img.oyster.com/production/Asia/Philippines/Luzon/Central%20Luzon%20Region/Pampanga%20Province/Angeles%20City/Green%20Canyon%20Eco%20Art%20Resort/Restaurants%20and%20Bars/palette_v17476978_nw_2000_0e4b0b5e44.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.oyster.com/production/Asia/Philippines/Luzon/Central%20Luzon%20Region/Pampanga%20Province/Angeles%20City/Green%20Canyon%20Eco%20Art%20Resort/The%20Hotel/entrance_v17477005_nw_2000_d0674bfb82.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://img.oyster.com/production/Asia/Philippines/Luzon/Central%20Luzon%20Region/Pampanga%20Province/Angeles%20City/Green%20Canyon%20Eco%20Art%20Resort/The%20Hotel/grounds_v17476977_nw_2000_29fe883180.webp" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="carousel-overlay">
+    <h1>Our Services</h1>
+    <p>Experience nature at its finest</p>
+  </div>
+</div>
+
+  <!-- FEATURES -->
+<div class="row text-center my-5">
+  <div class="col-md-2 col-6 mb-4" *ngFor="let item of features">
+    <div class="p-3">
+      <i class="fa-solid fa-{{ item.icon }} fa-2x text-success mb-2"></i>
+      <p class="fw-semibold mt-2">{{ item.title }}</p>
+    </div>
+  </div>
+</div>
+
+  <!-- GRID -->
+<div class="row g-4">
+  <div class="col-md-4" *ngFor="let service of services">
+    <div class="card h-100 shadow-sm">
+      <img [src]="service.image" class="card-img-top" [alt]="service.title">
+      <div class="card-body">
+        <h5 class="card-title">{{ service.title }}</h5>
+        <p class="card-text">{{ service.description }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- BUTTON -->
+<div class="text-center mt-5">
+  <a href="/contact" class="btn btn-success btn-lg px-4">
+    Book Your Experience Now
+  </a>
+</div>
+
+  <!-- REVIEWS -->
+<section class="home-testimonial">
+<div class="container-fluid">
+    <div class="row d-flex justify-content-center testimonial-pos">
+        <div class="col-md-12 pt-4 d-flex justify-content-center">
+            <h3>Reviews</h3>
+        </div>
+        <div class="col-md-12 d-flex justify-content-center">
+            <h2>Explore the customers experience</h2>
+        </div>
+    </div>
+    <section class="home-testimonial-bottom">
+        <div class="container testimonial-inner">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-4 style-3">
+                    <div class="tour-item ">
+                        <div class="tour-desc bg-white">
+                            <div class="tour-text color-grey-3 text-center">&ldquo;Great weekend getaway very near the city. It's half resort and half art gallery. You'll leave this place relaxed and recharged after a long and stressful week. Food is good too, and reasonably priced. Breakfast buffet is free for all guests. The resort has 2 swimming pools (a standard one, and a wave pool). One thing i miss about the resort is their free bike rentals, which are no longer available. I don't know why this is so. It's always a good time coming here with family.&rdquo;</div>
+                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://lh3.googleusercontent.com/a-/ALV-UjV1K89LRLlY7nsens3gV4WOv2N8pcwocJ6zLiTGesXMgSZsDoCZ=w90-h90-p-rp-mo-ba4-br100" alt=""></div>
+                            <div class="link-name d-flex justify-content-center">Brian Lumanog</div>
+                            <div class="link-position d-flex justify-content-center">Customer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 style-3">
+                    <div class="tour-item ">
+                        <div class="tour-desc bg-white">
+                            <div class="tour-text color-grey-3 text-center">&ldquo;We loved the relaxed "naturesque" atmosphere. The Christmas dinner was delicious and with very nice ambience. The pools are superb rooms are very good. The staff are very friendly and approachable. Christmas Eve well spent!&rdquo;</div>
+                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://lh3.googleusercontent.com/a-/ALV-UjWMscEJ8i48O5VhMJ73ET52IpkvFtb8uLhF0NKKQpjdPdkU4XET3w=w90-h90-p-rp-mo-ba4-br100" alt=""></div>
+                            <div class="link-name d-flex justify-content-center">Don Cruz</div>
+                            <div class="link-position d-flex justify-content-center">Customer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 style-3">
+                    <div class="tour-item ">
+                        <div class="tour-desc bg-white">
+                            <div class="tour-text color-grey-3 text-center">&ldquo;Sharing photos of the hotel lobby. Nice for a weekend fam gateaway. Ideal for corporate retreats and seminars. Vast grounds, okay even with two large groups checked in. There are villas as well. Parking is not a problem. They have golf cart seevice 24/7. There is a trek trail and access to several pools. Nice for photos and events.Beds are great. Very clean. They also observe green operations and the woodcrafts are magnificent 💚👌🏽&rdquo;</div>
+                            <div class="d-flex justify-content-center pt-2 pb-2"><img class="tm-people" src="https://lh3.googleusercontent.com/a-/ALV-UjWaGMJYmyQH2lNepaCoY-I2qf98ZzDPCNi_aAyHDZ654FyZKJp8=w90-h90-p-rp-mo-ba4-br100" alt=""></div>
+                            <div class="link-name d-flex justify-content-center">Anne Christabel de Leon</div>
+                            <div class="link-position d-flex justify-content-center">Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
