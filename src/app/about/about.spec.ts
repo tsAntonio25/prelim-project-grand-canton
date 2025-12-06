@@ -1,23 +1,22 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { About } from './about';
-
-describe('About', () => {
-  let component: About;
-  let fixture: ComponentFixture<About>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [About]
-    })
-    .compileComponents();
-
-    fixture = TestBed.createComponent(About);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
+describe("About Page Basic Tests", () => {
+  test("Form exists", () => {
+    const form = document.querySelector(".contact-form");
+    expect(form).not.toBeNull();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  test("Hero section exists", () => {
+    const hero = document.querySelector(".about-hero");
+    expect(hero).not.toBeNull();
+  });
+});
+describe("About Page Basic Tests", () => {
+  test("Form exists", () => {
+    const form = document.querySelector(".contact-form");
+    expect(form).not.toBeNull();
+  });
+
+  test("Hero section exists", () => {
+    const hero = document.querySelector(".about-hero");
+    expect(hero).not.toBeNull();
   });
 });
