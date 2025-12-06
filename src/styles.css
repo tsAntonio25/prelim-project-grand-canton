@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 @import "bootstrap/dist/css/bootstrap.min.css";
-=======
-/* You can add global styles to this file, and also import other style files */
+
+/* Global styles */
 body {  
     background: #FFFAE9 !important;
 }
@@ -9,10 +8,9 @@ body {
 app-root {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;   
+  min-height: 100vh;
 }
 
 router-outlet {
-  flex: 1;            
+  flex: 1;
 }
->>>>>>> 46b1d0a1484c8bc6b80d16c4f330557eb9b067c8
