@@ -64,9 +64,7 @@ hr {
   border: #7E911B;
   color: white;
 }
-/* -----------------------------------
-   SECTION TITLES (Promos, Moments, Events, About)
------------------------------------ */
+
 .section-title {
   font-size: 2rem;
   font-weight: 700;
@@ -227,7 +225,7 @@ hr {
 }
 
 .moments-section {
-  margin-bottom: 50px !important; /* ensures 50px margin at the bottom */
+  margin-bottom: 50px !important; 
 }
 
 .moments-title {
@@ -241,7 +239,6 @@ hr {
   margin-bottom: 40px;
 }
 
-/* Left and right lines */
 .moments-title::before,
 .moments-title::after {
   content: "";
@@ -270,12 +267,11 @@ hr {
    EVENTS SECTION (FULLY FIXED & CLEANED)
 ----------------------------------- */
 .event-section {
-  background-color: #FFFAE9;   /* match your exclusive/event color */
+  background-color: #FFFAE9;   
   padding: 70px 0;
   text-align: center;
 }
 
-/* Title with horizontal lines */
 .event-section .event-title {
   display: flex;
   align-items: center;
@@ -295,7 +291,6 @@ hr {
   background-color: #0B4629;
 }
 
-/* Fixed image styling */
 .event-section .event-image {
   width: 100%;
   max-width: 1000px;
@@ -308,7 +303,6 @@ hr {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Caption text (Fixed from 2px → readable) */
 .event-section .event-caption {
   font-size: 1.05rem;
   color: #0B4629;
@@ -347,14 +341,14 @@ hr {
 .about-text h2 {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #0B4629; /* deep green - consistent with all titles */
+  color: #0B4629;
   margin-bottom: 20px;
 }
 
 .about-text p {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: #2e2e2e; /* matches global body text */
+  color: #2e2e2e; 
   text-align: justify;
   max-width: 550px;
 }
@@ -364,7 +358,7 @@ hr {
   margin-top: 30px;
   display: inline-block;
   padding: 12px 32px;
-  background: #0B4629;   /* same green used in hero button */
+  background: #0B4629;   
   color: white;
   font-weight: 600;
   border-radius: 40px;
@@ -373,7 +367,7 @@ hr {
 }
 
 .about-btn:hover {
-  background: white;   /* dark green hover */
+  background: white;  
   color: #0B4629;
   border: 2px solid #0B4629;
 }
@@ -383,10 +377,10 @@ hr {
 ------------------------------ */
 .about-image-container {
   flex: 1;
-  min-width: 220px;       /* keeps it side-by-side */
+  min-width: 220px;       
   display: flex;
   justify-content: center;
-  align-items: center;    /* keeps image centered */
+  align-items: center;    
 }
 .about-image {
   width: 105%;
