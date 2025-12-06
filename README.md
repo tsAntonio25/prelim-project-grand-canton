@@ -8,9 +8,10 @@ A Lab Activiy in 6AWEB subject
 - Pangan, Aimee Li Marael
 
 ## Libraries used
+- Angular.js
 - Bootstrap v5
 
 ```bash
-npm i bootstrap@latest
+npm i @angular/cli bootstrap@latest
 ```
 
