@@ -43,7 +43,10 @@
                     <p class="mb-2 small text-muted">{{ item.employStatus }}</p>
                     
                     <!-- button -->
-                    <button class="btn btn-sm my-btn rounded-pill px-3">
+                    <button 
+                        class="btn btn-sm my-btn rounded-pill px-3"
+                        (click)="openPopup(item)"
+                        >
                         More Info
                     </button>
                     </div>
@@ -57,6 +60,24 @@
 </div>
 
 <!-- pop up -->
-<div class="popupcontainer">
+<div class="popupcontainer" *ngIf="selectedEmployee">
     
+    <div class="popup-content">
+
+        <button class="close-btn" (click)="closePopup()">×</button>
+
+        <div class="imgpfp">
+            <img [src]="selectedEmployee.imgpic" alt="Employee's Picture">
+        </div>
+
+        <div class="infos">
+            <h3>Employee #{{ selectedEmployee.employeeNum }}</h3>
+            <p><strong>Name:</strong> {{ selectedEmployee.name }}</p>
+            <p><strong>Gender:</strong> {{ selectedEmployee.gender }}</p>
+            <p><strong>Email:</strong> {{ selectedEmployee.email }}</p>
+            <p><strong>Status:</strong> {{ selectedEmployee.employStatus }}</p>
+            <p><strong>Salary:</strong> ₱{{ selectedEmployee.salary }}</p>
+        </div>
+
+    </div>
 </div>

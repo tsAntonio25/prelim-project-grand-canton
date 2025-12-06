@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-employee-directory',
-  imports: [FormsModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './employee-directory.html',
   styleUrl: './employee-directory.css',
 })
   
 export class EmployeeDirectory {
+  // search functions
   searchText: string = "";
   filteredList: any[] = [];
 
@@ -25,6 +27,17 @@ export class EmployeeDirectory {
       item.employStatus.toLowerCase().includes(text) ||
       item.employeeNum.toString().includes(text)
     );
+  }
+
+  // pop up
+  selectedEmployee: any = null;
+
+  openPopup(employee: any) {
+    this.selectedEmployee = employee;
+  }
+
+  closePopup() {
+    this.selectedEmployee = null;
   }
 
   // employee list
