@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+footer {
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer-bg {
+  background-color: #839527; 
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-address {
+  font-size: 20px;
+}
+
+.footer-line {
+  border-top: 2px solid white;
+  opacity: 1;
+  width: 100%;
+}
+
+.icon {
+    color: inherit;
+}

@@ -1,9 +1,50 @@
 <!--  navigation bar  -->
-<nav>
-    <a routerLink="/">Home</a>
-    <a routerLink="/about">About</a>
-    <a routerLink="/services">Services</a>
-    <a routerLink="/employee-directory">Employees</a>
+<nav class="navbar navbar-expand-lg gc-navbar px-4">
+  <div class="container-fluid">
+
+    <!-- logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="/greencanyonlogo.png" alt="green canyon logo">
+    </a>
+
+    <!-- mobile -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- pages -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav gap-4">
+
+        <li class="nav-item">
+          <a class="nav-link gc-link" routerLink="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link gc-link" routerLink="/employees">Employee</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link gc-link" routerLink="/about">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link gc-link" routerLink="/services">Services</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
 </nav>
 
-<router-outlet />
+<router-outlet/>
+
+<app-footer></app-footer>
+
