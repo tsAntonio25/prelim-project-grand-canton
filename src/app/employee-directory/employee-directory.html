@@ -1,2 +1,83 @@
-<p>employee-directory works!</p>
+<h1 class="mx-5 mt-5">Employee Directory</h1>
+<hr>
 
+<!-- directory -->
+<div class="container my-5 p-5">
+
+    <!-- search-->
+    <div class="search my-4 d-flex justify-content-center w-100">
+        <div class="input-group search-box">
+            <span class="input-group-text bg-white border-end-0">
+            <i class="bi bi-search"></i>
+            </span>
+            <input
+            type="search"
+            class="form-control border-start-0 rounded-end-pill"
+            placeholder="Search employee..."
+            [(ngModel)]="searchText"
+            (input)="filterEmployees()"
+            />
+        </div>
+    </div>
+
+     <!-- employee cards-->
+     <div class="employeecards">
+
+        <!-- cards-->
+        <div class="row g-4 justify-content-center">
+
+            @for (item of filteredList; track $index) {
+                <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+
+                <div class="card shadow-sm employee-card">
+                    
+                    <!-- img -->
+                    <div class="card-img-top p-3 d-flex justify-content-center">
+                    <img [src]="item.imgpic" class="img-placeholder" alt="Profile picture" width="80%">
+                    </div>
+
+                    <!-- infos -->
+                    <div class="card-body text-start">
+                    <h6 class="fw-bold mb-1">{{ item.name }}</h6>
+                    <p class="mb-0 small text-muted">{{ item.title }}</p>
+                    <p class="mb-2 small text-muted">{{ item.employStatus }}</p>
+                    
+                    <!-- button -->
+                    <button 
+                        class="btn btn-sm my-btn rounded-pill px-3"
+                        (click)="openPopup(item)"
+                        >
+                        More Info
+                    </button>
+                    </div>
+                </div>
+                </div>
+            }
+        </div>
+
+     </div>
+
+</div>
+
+<!-- pop up -->
+<div class="popupcontainer" *ngIf="selectedEmployee">
+    
+    <div class="popup-content">
+
+        <button class="close-btn" (click)="closePopup()">×</button>
+
+        <div class="imgpfp">
+            <img [src]="selectedEmployee.imgpic" alt="Employee's Picture">
+        </div>
+
+        <div class="infos">
+            <h3>Employee #{{ selectedEmployee.employeeNum }}</h3>
+            <p><strong>Name:</strong> {{ selectedEmployee.name }}</p>
+            <p><strong>Gender:</strong> {{ selectedEmployee.gender }}</p>
+            <p><strong>Email:</strong> {{ selectedEmployee.email }}</p>
+            <p><strong>Status:</strong> {{ selectedEmployee.employStatus }}</p>
+            <p><strong>Salary:</strong> ₱{{ selectedEmployee.salary }}</p>
+        </div>
+
+    </div>
+</div>
