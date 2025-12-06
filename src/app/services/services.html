@@ -29,12 +29,21 @@
   </div>
 </div>
 
-  <!-- FEATURES -->
+<!-- FEATURES -->
 <div class="row text-center my-5">
   <div class="col-md-2 col-6 mb-4" *ngFor="let item of features">
-    <div class="p-3">
-      <i class="fa-solid fa-{{ item.icon }} fa-2x text-success mb-2"></i>
-      <p class="fw-semibold mt-2">{{ item.title }}</p>
+    <div class="feature-card">
+      <div class="feature-inner">
+        <!-- Front -->
+        <div class="feature-front p-3">
+          <i class="fa-solid fa-{{ item.icon }} fa-2x text-success mb-2"></i>
+          <p class="fw-semibold mt-2">{{ item.title }}</p>
+        </div>
+        <!-- Back -->
+        <div class="feature-back p-3">
+          <p>{{ item.info }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -53,7 +62,7 @@
 </div>
 
   <!-- BUTTON -->
-<div class="text-center mt-5">
+<div class="text-center mt-5 mb-5">
   <a href="/contact" class="btn btn-success btn-lg px-4">
     Book Your Experience Now
   </a>
