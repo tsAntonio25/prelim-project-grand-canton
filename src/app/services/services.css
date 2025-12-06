@@ -261,7 +261,7 @@
 }
 
 /* MEDIA QUERIES */
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices */
 @media (max-width: 992px) {
   .feature-card {
     width: 150px;
@@ -269,7 +269,7 @@
   }
 }
 
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices */
 @media (max-width: 768px) {
   .carousel-header {
     height: 450px;
@@ -307,7 +307,7 @@
   }
 }
 
-/* Extra small devices (phones, <576px) */
+/* Extra small devices */
 @media (max-width: 576px) {
   .carousel-header {
     height: 350px;
